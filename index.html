@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>HTML Skeleton</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Your styles should be called here -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <h1> HTML5 Input Types </h1>
+      <form id="numbers-input">
+        <h2> Numbers input</h2>
+        <p> Bananas (max 10): <input type="number" class="fruit" id="banana" data-price="0.5" data-calories="100" max="10" autofocus /></p>
+        <p> Mangos (min 5): <input type="number" min="5" /></p>
+        <p> Apples: <input type="number" class="fruit" id="apple" data-price="0.5" data-calories="400" /></p>
+        <p>Oranges (placeholder text): <input type="text" class="fruit" id="orange" data-price="2.50" data-calories="600" placeholder="between 2 & 6" /> </p>
+        <p> Pomegranate (field width): <input type="text" class="fruit" id="pomegranate" data-price="5.5" data-calories="100" size="5" /> </p>
+        <p> Melon (character limit): <input type="text" class="fruit" id="melon" data-price="5.50" data-calories="100" maxlength="5" /> </p>
+        <input id="compute" type="button" value="compute" />
+      </form>
+
+      <form>
+        <h2> Pull Down </h2>
+        <p>
+          Select what type of tablet you ideally want.
+        </p>
+        <select name="tablet-pulldown">
+          <option value="iPad Pro" selected>iPad Pro </option>
+          <option value="iPad">iPad </option>
+        </select>
+      </form>
+
+      <form id="tablet-checkbox">
+        <h2> Checkbox</h2>
+        <p> Select the tablet(s) you ideally want (check all that apply):</p>
+        <input type=checkbox id="ipad-pro" value="ipad pro"><label for="ipad-pro"> iPad Pro</label>
+        <br>
+        <input type=checkbox id="ipad" value="ipad"><label for="ipad"> iPad</label>
+        <br>
+        <input type=checkbox id="galaxy" value="galaxy"><label for="galaxy"> Galaxy 7</label>
+      </form>
+
+      <form>
+        <h2> What is your favorite sport?</h2>
+        <input type="text" list="fav-sports">
+        <datalist id="fav-sports">
+          <option value="Futbol">
+          <option value="Football">
+          <option value="Tennis">
+          <option value="Long Jump">
+        </datalist>
+      </form>
+
+
+      </form>
+
+    </div>
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+
+  </body>
+
+</html>
